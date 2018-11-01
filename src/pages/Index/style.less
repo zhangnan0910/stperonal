@@ -1,0 +1,76 @@
+
+.Layout-bg {
+  background: url(/static/imgs/bg.jpg) no-repeat;
+  background-size: cover;
+  .ant-layout, .ant-layout-sider {
+    background: transparent;
+  }
+  .ant-layout-content {
+    background: #f0f2f5;
+  }
+  .ant-menu-dark {
+    background: transparent;
+    //#0C213C
+  }
+  .ant-menu-dark .ant-menu-item-selected > a:hover, .ant-menu-dark .ant-menu-item-selected > a {
+    color: #1093ED;
+  }
+  .ant-menu-inline .ant-menu-item {
+    margin-bottom: 0;
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: transparent;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background: #0C213C;
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: transparent;
+  .box {
+    display: flex;
+    width: 200px;
+    flex-shrink: 0;
+    margin-left: -50px;
+    .logo {
+      height: 40px;
+      width: 140px;
+      margin-left: 15px;
+      margin-top: 12px;
+      background: url(/static/imgs/login/loginindex.png) no-repeat;
+      background-size: cover;
+    }
+
+  }
+
+  .own {
+    flex: 1;
+    //cursor: pointer;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    span {
+      padding: 0 10px;
+    }
+  }
+}
+
+.ant-layout-sider-trigger {
+  background-color: #eee;
+  color: #2f54eb;
+}
+
+.treeShow {
+  text-indent: 2em;
+  margin-left: 15px;
+}

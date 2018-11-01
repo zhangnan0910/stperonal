@@ -1,0 +1,126 @@
+*{
+  margin: 0; padding: 0;
+  //box-sizing: border-box;
+}
+body{
+  width: 100%;
+  font-size: 14px;
+  font-family: microsoft yahei,"微软雅黑";
+  
+  #app{
+    height: 100%;
+    &>.ant-layout{
+      height: 100%;
+    }
+  }
+}
+textarea{
+  resize:none;
+}
+img{
+  background-size: cover;
+}
+ul,ol,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #666666;
+}
+img{
+  border: none;
+}
+.clearfix:after{
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+// 单行省略号
+.dhEllipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+// 多行省略号
+.ellipsis{
+  overflow:hidden;/*超出隐藏*/
+  text-overflow:ellipsis;/*文本溢出时显示省略标记*/
+  display:-webkit-box;/*设置弹性盒模型*/
+  -webkit-line-clamp:3;/*文本占的行数,如果要设置2行加...则设置为2*/
+  -webkit-box-orient:vertical;/*子代元素垂直显示*/
+}
+.scrollbar{    
+  overflow: hidden;
+  overflow-y: auto;   
+  width: 50%; 
+  padding: 15px 10px; 
+}
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar>li{     
+    position: relative;
+    i{
+      position: absolute;
+      right: 5px;
+      top:25px;
+    }
+    padding: 15px 20px;
+    background: #FCFCFC;
+    border: 1px dashed #eaeaea;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    dl{
+        display: flex;
+        dt{
+            flex-shrink: 0;
+            img{
+              width: 64px;
+              height: 64px;
+              border-radius: 50%;
+            }
+        }
+        dd{
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}/* Let's get this party started */
+.scrollbar::-webkit-scrollbar {    
+  width: 8px;
+}/* Track */
+.scrollbar::-webkit-scrollbar-track {    
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+}/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {    
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;    
+  background:#ccc;;    
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.ximiBlock::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.ximiBlock::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: rgba(0,0,0,0);
+}
+
+/*定义滑块 内阴影+圆角*/
+.ximiBlock::-webkit-scrollbar-thumb
+{
+  background: #B5B5B5;
+  border-radius: 3px;
+}

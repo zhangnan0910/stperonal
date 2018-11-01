@@ -1,0 +1,232 @@
+
+.MonitorLesson-model-box{
+    .ant-modal-header {
+        padding: 8px 10px;
+    }
+    .ant-modal-close-x {
+        height: 40px;
+        width: 40px;
+        &:before {
+            position: relative;
+            top: -8px;
+        }
+    }
+   .ant-modal-content{
+       .ant-modal-title{
+            .MonitorLesson-model-title{
+                font-size: 14px;
+                color:#666666;
+            }
+        }
+        // .help {
+        //     .ant-modal-content {
+        //         width: 400px;
+        //         height: 600px;
+        //         margin: auto;
+        //     }
+        //     .ant-modal-body {
+        //         padding: 0;
+        //     }
+        // }
+        .help-header {
+            padding-left: 30px;
+            background: url('/static/imgs/icons/ic_question_24.png') no-repeat left;
+        }
+        .help-list {
+            padding: 10px 20px;
+            width: 100%;
+            background: #F8F8F8;
+            overflow: auto;
+        }
+        .help-list-none {
+            font-size: 12px;
+            color: #BFBFBF;
+            width: 100%;
+            background: #F8F8F8;
+            padding-top: 150px;
+            text-align: center;
+        }
+        .help-list_item-time {
+            float: right;
+            font-size: 12px;
+            color: #BBBBBB;
+            padding-right: 2px;
+        }
+        .help-list_item-nickname {
+            display: inline-block;
+            font-size: 12px;
+            color: #999999;
+            margin-bottom: 5px;
+        }
+        .help-list_item-state {
+            float: right;
+            font-size: 12px;
+            margin-right: 10px;
+            position: relative;
+            background: no-repeat center / 14px;
+        }
+        .help-list_item-state--loading {
+            color: transparent;
+            width: 14px;
+            background-image: url(/resources/images/room/loading.svg);
+        }
+        .help-list_item-state--error {
+            color: transparent;
+            width: 14px;
+            background-color: red;
+            cursor: pointer;
+        }
+        .help-list_item-state--unread {
+            color: #BBBBBB;
+        }
+        .help-list_item-state--read {
+            color: #BBBBBB;
+        }
+        .help-list_item-nickname.from-self {
+            color: #1093ED;
+        }
+        .help-list_item-content {
+            font-size: 14px;
+            color: #333333;
+            position: relative;
+            width: 100%;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            background: #FFFFFF;
+            border: 1px solid #EEEEEE;
+            border-radius: 4px;
+        }
+        .help-list_item-content:after{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 44px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-bottom-right-radius: 4px;
+            transition: opacity ease .3s;
+            opacity: 0;
+        }
+        // .help-list_item-content:hover:after {
+        //     opacity: 1;
+        // }
+        .help-list_item-content.level-0 {
+            background: #D9EDF8;
+            border: 1px solid #BDE8F1;
+        }
+        .help-list_item-content.level-0:after{
+            content: '普通';
+            background: #5AC0DF;
+        }
+        .help-list_item-content.level-1 {
+            background: #D9EDF8;
+            border: 1px solid #BDE8F1;
+        }
+        .help-list_item-content.level-1:after{
+            content: '平急';
+            background: #5AC0DF;
+        }
+        .help-list_item-content.level-2 {
+            background: #FCF8E3;
+            border: 1px solid #FAEBCC;
+        }
+        .help-list_item-content.level-3:after{
+            content: '加急';
+            background: #D5BD2E;
+        }
+        .help-list_item-content.level-3 {
+            background: #F2DEDE;
+            border: 1px solid #EBCCD1;
+        }
+        .help-list_item-content.level-3:after{
+            content: '特急';
+            background: #D9534F;
+        }
+        .ant-modal-body{
+            height: 400px;
+            background: #F8F8F8;
+            padding: 0;
+            .MonitorLesson-model-content{
+                position: relative;
+                padding: 20px;
+                padding-top:100px;
+                .MonitorLesson-model-content-title{
+                    body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;  }
+                    background: #fff;
+                    width: 100%;
+                    padding: 15px;
+                    height: 90px;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    display: flex;
+                    z-index: 10;
+                    dl{
+                        display: flex;
+                        position: relative;
+                        width: 100%;
+                        dt{
+                            width: 64px;
+                            height: 64px;
+                            flex-shrink: 0;
+                            img{
+                                width: 64px;
+                                height: 64px;
+                                border-radius: 50%;
+                            }
+                        }
+                        dd{
+                            padding-left: 15px;
+                            flex: 1;
+                            h3,p{
+                                width:120px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            h3{
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: PingFangSC-Medium;
+                                color: #333333;
+                            }
+                            p{
+                                font-family: PingFangSC-Regular;
+                                font-size: 12px;
+                                color: #999999;
+                                margin-top:3px;
+                            }
+                        }
+                        .MonitorLesson-model-content-title-button{
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                        }
+                    }
+                    
+                }
+                .help-list{
+                    height: 280px;
+                    width: 100%;
+                }
+            }
+        }
+        .MonitorLesson-model-footer{
+            z-index: 10;
+            width: 100%;
+            .MonitorLesson-model-button{
+                height: 80px;
+                margin-left: 15px;
+            }
+            .MonitorLesson-model-textarea{
+                height: 80px;
+                width: 200px;
+            }
+        }
+        
+        
+   }
+}
